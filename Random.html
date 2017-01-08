@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-US">
+<head>    
+<title>Random Variables</title>
+<meta charset="utf-8">
+</head>
+    <style>
+        h1{
+            font-family: cursive;
+            font-size: 20px;
+            color:cyan;
+    
+        }
+        h2{
+            font-family: cursive;
+            font-size: 25px;
+            color:chartreuse;
+            text-align: center;
+        }
+        hr{
+         color: darkmagenta;
+        }
+        div.java1{
+             background-color:deepskyblue;
+            color: black;
+            margin: 20px 0 20px 0;
+            padding: 20px;
+             }
+        h3{
+            font-family: cursive;
+            font-size: 20px;
+            color:black;
+            text-align:left;
+        }
+        div.note{
+            background-color:dodgerblue;
+            color: black;
+            margin: 20px 0 20px 0;
+            padding: 20px;
+        }
+         table{
+            width:60%;
+        }
+        th{
+            background-color:black;
+            color: azure;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        td{
+           background-color:beige;
+               
+        }
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+        }
+        th,td{
+            text-align: center;
+            font-family: cursive;
+            font-size: 18px;
+            padding: 5px;
+        }
+        div.inside{
+            background-color: lightblue;
+            color:dimgray;
+            font-size: 14px;
+            font-family: sans-serif;
+             margin: 20px 5px 20px 0;
+            padding: 20px;
+        }
+    </style>
+<body style="background-color:dimgrey";>
+    <br>
+    <br>
+<hr>    
+<h2><q>How to use Random <sp style="color:red";>object</sp> in java</q></h2>
+</pre>
+<div class ="note">
+<h3><pre>
+<b>truncate : </b>
+ To take a float or double and want the corresponding integer (possibly as a float, double, int or long)
+ there are four basic algorithms you might use: round, ceil, floor or truncate.
+ With truncate the numbers are always rounded down toward zero. Use i = (int)d;
+</pre>
+    </div>
+    <table>
+   <tr> <th>Value</th>
+       <th>Truncate</th>
+    </tr>
+        <tr>
+        <td>-1.6</td>
+        <td>-1</td></tr>
+        <tr>
+        <td>-1.5</td>
+        <td>-1</td></tr>
+        <tr>
+        <td>-1.4</td>
+        <td>-1</td>
+        </tr>
+        <tr>
+        <td>+1.4</td>
+        <td>1</td>
+        </tr>
+        <tr>
+        <td>+1.5</td>
+            <td>+1</td> </tr>
+        <tr><td>+1.6</td>
+           <td>+1</td></tr>
+        <tr>
+        
+    </table></h3>
+    
+<div class="java1"><h3>
+<pre>
+<code >
+<div class="inside">import java.util.Random;</div>
+public class random {
+
+	public static void main(String[] args) {
+		Random r=new Random();
+		int b=r.nextInt();
+		int c=r.nextInt();
+		System.out.println(b);
+		System.out.println(c);
+	}
+
+}
+</code></pre>
+    </h3>
+    </div>
+<div class ="p1">
+<h3>
+<pre>
+<em>There are two ways : </em>
+<sp style="color:red";>1. Using Math.random()
+2. Using Random class in Java</sp>
+<br>
+1. Using Math.random() :
+   <div class="inside">
+    double random = Math.random() * Max + Min;
+    or
+    int random = (int )(Math.random() * Max + Min);
+    </div>
+    This will give you value from Max to Min using Math.random()
+    <div class="note">
+    punch line:
+    random() method returns a random number between 0.0 and 0.999
+    </div>
+    <br>
+2. Using Random class in Java :
+ <div class="inside">
+ Random rand = new Random(); 
+ 
+ int value = rand.nextInt(Max); </div>
+This will give value from 0 to Max-1.
+for 1 to Max ->
+<div class="inside">rand.nextInt((max - min) + 1) + min;
+</div>
+</pre>    
+</h3>
+</div>
+<hr>
+    <h2><q>How to use Random <sp style="color:red";>variable</sp> in c++</q></h2>   
+</body>    
+</html>
